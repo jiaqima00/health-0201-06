@@ -11,12 +11,12 @@
 <body style="margin-top: 0%;">
 
   <div class="tab">
-   <!----> <button class="tablinks" onclick="openCity(event, 'Tab 1')">Tab 1</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab 2')">Tab 2</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab 3')">Tab 3</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab 4')">Tab 4</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab 5')">Tab 5</button>
-    <button class="tablinks" onclick="openCity(event, 'Tab 6')">Tab 6</button>
+   <!----> <button class="tablinks" onclick="openCity(event, 'Tab 1')">Text</button>
+    <button class="tablinks" onclick="openCity(event, 'Tab 2')">Choices</button>
+    <button class="tablinks" onclick="openCity(event, 'Tab 3')">To Do</button>
+    <button class="tablinks" onclick="openCity(event, 'Tab 4')">Profile</button>
+    <button class="tablinks" onclick="openCity(event, 'Tab 5')">Colors</button>
+    <button class="tablinks" onclick="openCity(event, 'Tab 6')">Lower Right</button>
   </div>
 
       <!-- Tab content -->
@@ -71,18 +71,23 @@
       </div>
 
       <div id="Tab 4" class="tabcontent">
-        <h3>Tab 4</h3>
-        <p>Tab 4 is the capital of France.</p>
+        <h3>Profile</h3>
+        <center>
+          <input type="image" src="profile.webp" style="width:300px;height:300px;" onclick="profileNotif();"/><br>
+          <b>Skoggy D.</b>
+        </center>
       </div>
       
       <div id="Tab 5" class="tabcontent">
         <h3>Tab 5</h3>
-        <p>Tab 5 is the capital of Japan.</p>
+        <h1>Colors</h1>
+        <div style="color:yellow; background-color: black;">Sample text</div>
+        <div style="color:purple; background-color: yellow;">Sample text</div>
       </div>
 
       <div id="Tab 6" class="tabcontent">
-        <h3>Tab 6</h3>
-        <p>Tab 6 is the capital of Japan.</p>
+        <h3>Lower Right</h3>
+        <p class="tab6Text">Down Here</p>
       </div>
 </body>
 </yes>
