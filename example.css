@@ -35,6 +35,7 @@
     display: none;
     padding: 50px 12px;
     border: 1px solid #ccc;
+    line-height: 2;
     height: 100%;
     width: 100%;
     z-index: 1;
