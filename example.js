@@ -44,3 +44,7 @@ function openCity(evt, cityName) {
       document.getElementById("choiceResult").style.display = "inline";
     }
   }
+
+  function profileNotif(){
+    alert("don't mess with the skog.");
+  }

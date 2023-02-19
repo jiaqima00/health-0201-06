@@ -35,6 +35,8 @@
     display: none;
     padding: 50px 12px;
     border: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
     z-index: 1;
     position:relative
   }
