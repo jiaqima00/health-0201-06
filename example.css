@@ -48,3 +48,38 @@
     position:absolute;
     padding: 3px
   }
+
+  /* 
+  Todo list 
+  References: https://www.w3schools.com/howto/howto_js_todolist.asp 
+  */
+  ul {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  ul li {
+    list-style-type: none;
+    padding: 10px;
+    background: #eee;
+  }
+
+  ul li:nth-child(odd) {
+    background: white;
+  }
+
+  ul li:hover {
+    background: rgb(150, 150, 150);
+  }
+
+  ul li.checked {
+    text-decoration: line-through;
+  }
+
+  .remove {
+    position: relative;
+    left: 60px;
+  }
