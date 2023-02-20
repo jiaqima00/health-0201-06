@@ -48,3 +48,43 @@ function openCity(evt, cityName) {
   function profileNotif(){
     alert("don't mess with the skog.");
   }
+
+
+  /*
+  References: 
+  https://www.w3schools.com/howto/howto_js_todolist.asp
+  https://www.educative.io/answers/how-to-create-a-simple-to-do-list-with-html-css-and-js
+  */
+  function todoAdd() {
+    var list = document.getElementById('todoList');
+    list.addEventListener('click', function(e) {
+      if (e.target.tagName === 'LI') {
+        e.target.classList.toggle('checked');
+      }
+    }, false);
+  
+    var entry = document.getElementById('todoInput').value;
+    var newItem = document.createElement('li');
+  
+    if (entry === '') {
+      alert("Empty entry");
+    } else {
+      var spanValue = document.createElement('span');
+      var spanBtn = document.createElement('button');
+      spanBtn.className = "remove";
+  
+      spanValue.innerText = entry;
+      spanBtn.innerText = "x";
+      spanBtn.addEventListener('click', todoDelete);
+      
+      newItem.appendChild(spanValue);
+      newItem.appendChild(spanBtn);
+      document.getElementById('todoList').appendChild(newItem);
+    }
+  
+    document.getElementById('todoInput').value = "";
+  
+    function todoDelete() {
+      document.getElementById('todoList').removeChild(newItem);
+    }
+  }
